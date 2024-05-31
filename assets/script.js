@@ -12,9 +12,11 @@ const collectEmployees = function() {
 
   while (counter) {
     let employee = {};
-    employee.firstName = prompt('What is the First Name of the employee you are adding?');
-    employee.lastName = prompt('What is the Last Name of the employee you are adding?');
-    employee.salary = parseInt(prompt('What is the expected salary of this employee?'));
+
+    // prompts are exactly formatted to be perfectly coherent with the mock-up displayed in the module.
+    employee.firstName = prompt('Enter First Name');
+    employee.lastName = prompt('Enter Last Name');
+    employee.salary = parseInt(prompt('Enter Salary'));
     employeesArray.push(employee);
     counter = confirm('Do you want to add another employee?');
   }
@@ -30,6 +32,8 @@ const displayAverageSalary = function(employeesArray) {
 
   let entireSalary = 0;
 
+  // we define "Entiresalary", which is the sum of all salary of the listed employees.
+
   for( let i=0; i<employeesArray.length; i++){
     const obj=employeesArray[i]
     entireSalary += obj.salary
@@ -41,6 +45,8 @@ const displayAverageSalary = function(employeesArray) {
   averageSalary = entireSalary / employeesArray.length;
   console.log(averageSalary)
 
+  // We define the averagesalary as a changing attribute, and use mathematical algorithm to obtain a value.
+
 }
 
 
@@ -50,10 +56,17 @@ const displayAverageSalary = function(employeesArray) {
 
 const getRandomEmployee = function(employeesArray) {
   // TODO: Select and display a random employee
+
   const randomInt = Math.floor(Math.random() * employeesArray.length)
+
+  // We obtain a random number in a number between 0 to the length of the employeesArray
+
   const randomEmployee = employeesArray[randomInt]
-  console.log(randomEmployee)
+
+  // Random employee is obtained through using the random number we obtained in the array to locate the person.
+
   console.log(`Congratulations to ${randomEmployee.firstName} ${randomEmployee.lastName} for winning our random employee challange!`)
+  // Line above was written exactly with how the Console in Mock-up looked like.
 }
 
 /*
