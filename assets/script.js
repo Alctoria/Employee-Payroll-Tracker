@@ -17,7 +17,17 @@ const collectEmployees = function() {
     employee.firstName = prompt('Enter First Name');
     employee.lastName = prompt('Enter Last Name');
     employee.salary = parseInt(prompt('Enter Salary'));
+
+    //isNaN is used to determine if the inputted salary is a number or not.
+    // an if command is used to ensure that if the inputted salary is not a number (isNaN = true), the inputed salary is automatically determined as 0
+    
+    if (isNaN(employee.salary) == true) {
+        employee.salary = 0;
+    }
+
+
     employeesArray.push(employee);
+
     counter = confirm('Do you want to add another employee?');
   }
 
