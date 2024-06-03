@@ -21,8 +21,8 @@ const collectEmployees = function() {
     //isNaN is used to determine if the inputted salary is a number or not.
     // an if command is used to ensure that if the inputted salary is not a number (isNaN = true), the inputed salary is automatically determined as 0
     
-    if (isNaN(employee.salary) == true) {
-        employee.salary = 0;
+    while (isNaN(employee.salary) == true) {
+        employee.salary = parseInt(prompt('The salary value you entered is not an integer. Please resubmit an actual salary in a numerical value'));
     }
 
 
