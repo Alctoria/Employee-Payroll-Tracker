@@ -11,7 +11,7 @@ AS A payroll manager,
 I WANT AN employee payroll tracker,
 SO THAT I can see my employees' payroll data and properly budget for the company
 
-## Acceptaance Criteria
+## Acceptance Criteria
 
 GIVEN an employee payroll tracker,
 
@@ -26,6 +26,18 @@ THEN I am prompted to add a new employee.
 
 WHEN I choose to cancel,
 THEN my employee data is displayed on the page sorted alphabetically by last name, and the console shows computed and aggregated data.
+
+## Screenshots
+
+<img width="785" alt="image" src="https://github.com/Alctoria/Employee-Payroll-Tracker/assets/100668552/1ab1db92-1444-4cd9-88da-ec9391061f02">
+
+<img width="781" alt="image" src="https://github.com/Alctoria/Employee-Payroll-Tracker/assets/100668552/2d18202e-5c0c-4d14-a3f1-9e997f4b6e24">
+
+## Deployment-Link
+
+https://alctoria.github.io/Employee-Payroll-Tracker/
+
+
 
 ## Credits
 
